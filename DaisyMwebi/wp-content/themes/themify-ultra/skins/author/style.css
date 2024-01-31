@@ -1,0 +1,383 @@
+/*
+Skin Name:Ultra Author
+Version:1.0
+Demo URI:https://themify.org/ultra-author/
+Required Plugins: builder-contact, builder-woocommerce, woocommerce
+*/
+
+/************************************************************************************
+GENERAL
+*************************************************************************************/
+:root{
+	--theme_accent:#63afab;
+	--theme_accent_semi:rgba(99,175,171,.9)
+}
+body{
+	color:#808080;
+	font:1em/1.9em 'Poppins', sans-serif
+}
+.post-nav .arrow,
+a{
+	color:#000
+}
+a:hover{
+	color:var(--theme_accent)
+}
+
+/* HEADINGS
+================================================ */
+h1,h2,h3,h4,h5,h6{
+	font-family:'Lora', serif;
+	font-weight:500;
+	color:#404040
+}
+h1{
+	font-size:3.6em;
+}
+h2{
+	font-size:3.1em;
+	letter-spacing:-.015em;
+	line-height:1.15em;
+	margin:0 0 .5em
+}
+h3{
+	font-weight:bold
+}
+
+/************************************************************************************
+HEADER
+*************************************************************************************/
+.transparent-header #headerwrap.fixed-header {
+    background-color:rgba(255,255,255,.9);
+}
+.transparent-header #headerwrap{
+	color:#333
+}
+/* SITE LOGO
+================================================ */
+#site-logo{
+	font-family:'Lora', serif;
+	font-size:1.9em;
+	font-weight:bold;
+	letter-spacing:-.01em
+}
+/* MAIN NAVIGATION
+================================================ */
+#main-nav ul a{
+	padding:.4em 1.4em
+}
+#main-nav-wrap{
+	margin-right:auto;
+	margin-left:17px
+}
+#main-nav>li>a{
+	box-shadow:inset 0 3px 0 0 transparent
+}
+#main-nav>.current_page_item>a,
+#main-nav>.current-menu-item>a,
+#main-nav>li>a:hover{
+	box-shadow:inset 0 3px 0 0 var(--theme_accent)
+}
+
+/* CART ICON
+================================================ */
+.cart-wrap a span{
+	background-color:#e01621;
+	color:#fff;
+	min-width:10px;
+	min-height:10px;
+	padding:4px;
+	line-height:10px;
+	bottom:9px;
+	right:-7px
+}
+/* HEADER TOPBAR/HORIZONTAL/BOXED-COMPACT
+================================================ */
+.header-bottom #header,
+.header-top-bar #header,
+.header-horizontal #header,
+.boxed-compact #header{
+	padding-top:0;
+	padding-bottom:0
+}
+.header-bottom #site-logo,
+.header-top-bar #site-logo,
+.header-horizontal #site-logo,
+.boxed-compact #site-logo{
+	margin-top:30px
+}
+.header-bottom #site-description,
+.header-top-bar #site-description,
+.boxed-compact #site-description{
+	margin-top:40px
+}
+.header-stripe #searchform-wrap,
+.header-stripe .search-button,
+.header-stripe .cart-icon,
+.header-stripe #header .social-widget,
+.header-bottom #searchform-wrap,
+.header-bottom .search-button,
+.header-bottom .cart-icon,
+.header-bottom #header .social-widget{
+	order:1
+}
+.header-bottom .navbar-wrapper,
+.header-stripe .navbar-wrapper,
+.header-top-bar .navbar-wrapper,
+.header-horizontal .navbar-wrapper,
+.boxed-compact .navbar-wrapper{
+	display:flex;
+	justify-content:flex-start;
+	align-items:center
+}
+.header-bottom #main-nav>li>a,
+.header-top-bar #main-nav>li>a,
+.header-horizontal #main-nav>li>a,
+.boxed-compact #main-nav>li>a{
+	padding:2.45em 1.05em
+}
+/* HEADER BOTTOM
+================================================ */
+.header-bottom #main-nav-wrap{
+	position:unset
+}
+
+/************************************************************************************
+WIDGETS
+*************************************************************************************/
+.footer-widgets .widgettitle,
+.widgettitle{
+	color:#000;
+	text-transform:none;
+	font-size:1.3em;
+	font-weight:bold;
+	letter-spacing:.02em
+}
+
+/************************************************************************************
+FOOTER
+*************************************************************************************/
+#footerwrap{
+	background-color:#f7f3ee;
+	border:none;
+	margin-top:80px
+}
+#footer{
+	color:#808080
+}
+/* FOOTER LOGO
+================================================ */
+#footer-logo{
+	font-size:2.6em;
+	font-family: 'Lora', serif;
+	font-weight:bold;
+	letter-spacing:.01em;
+	margin-bottom:1.6em
+}
+#footer-logo a{
+	color:#000
+}
+/* FOOTER BACK TOP
+================================================ */
+#footerwrap .footer-tab,
+#pagewrap .back-top-float,
+#footerwrap .back-top:not(.back-top-float) .arrow-up a{
+	background-color:var(--theme_accent);
+	color:#fff
+}
+#pagewrap .back-top-float:hover,
+#footerwrap .back-top:not(.back-top-float) .arrow-up a:hover{
+	background-color:#000;
+	color:#fff
+}
+/* FOOTER TEXT
+================================================ */
+.section-col + .footer-text{
+	padding:2em 0 .6em;
+	font-size:1em;
+	text-align:center;
+	border-top:1px solid rgba(0,0,0,.1)
+}
+.section-col + .footer-text .one{
+	margin-right:10px
+}
+.footer-text .one{
+    margin-bottom:15px
+}
+.section-col + .footer-text .one,
+.section-col + .footer-text .two{
+	display:inline-block
+}
+/************************************************************************************
+WOOCOMMERCE
+*************************************************************************************/
+/* BUTTON */
+#slide-cart .button,.woocommerce ul.products li.product .button,.woocommerce a.button.disabled,.woocommerce button.button.disabled, .woocommerce button.button.alt.disabled,.woocommerce button.button:disabled,.woocommerce button.button:disabled[disabled],.woocommerce input.button.disabled,.woocommerce input.button:disabled,.woocommerce input.button:disabled[disabled],.woocommerce #respond input#submit,.woocommerce a.button,.woocommerce button.button,.woocommerce input.button,.woocommerce a.button.alt,.woocommerce button.button.alt,.woocommerce input.button.alt{
+	background-color:#e8b31e;
+	color:#fff;
+	font-size:.95em;
+	font-weight:600;
+	text-transform:uppercase;
+	letter-spacing:0.12em;
+	padding:.65em 1.6em
+}
+#slide-cart .button:hover,.woocommerce ul.products li.product .button:hover,.woocommerce a.button.alt.disabled:hover,.woocommerce button.button.alt.disabled:hover,.woocommerce button.button.alt:disabled:hover,.woocommerce button.button.alt:disabled[disabled]:hover,.woocommerce input.button.alt.disabled:hover,.woocommerce input.button.alt:disabled:hover,.woocommerce input.button.alt:disabled[disabled]:hover,.woocommerce #respond input#submit:hover,.woocommerce a.button:hover,.woocommerce button.button:hover,.woocommerce input.button:hover,.woocommerce a.button.alt:hover,.woocommerce button.button.alt:hover,.woocommerce input.button.alt:hover{
+	background-color:#000;
+	color:#fff
+}
+/* General */
+.woocommerce ul.loops-wrapper.products>li.product{
+	text-align:center;
+	padding:10px
+}
+.woocommerce ul.products li.product .product-share-wrap,
+.woocommerce ul.products li.product .button{
+	opacity:0;
+	transition:all .5s
+}
+.woocommerce ul.products li.product:hover .product-share-wrap,
+.woocommerce ul.products li.product:hover .button{
+	opacity:1
+}
+.product-share-wrap{
+	position:absolute;
+	width:100%;
+	left:0;
+	top:35%;
+	z-index:1
+}
+.woocommerce div.product div.summary .product-share-wrap{
+	position:static
+}
+/* ARCHIVE PRODUCTS
+================================================ */
+/* Sale */
+.woocommerce span.onsale,
+.woocommerce ul.products li.product .onsale{
+	background-color:#e01621
+}
+/* Image */
+ul.products li.product .post-image{
+	border-radius:0;
+	box-shadow:0 8px 22px 0px rgba(0,0,0,.1);
+	margin-bottom:30px
+}
+ul.products li.product .post-image img{
+	border-radius:0
+}
+.woocommerce ul.products li.product a img{
+	margin:0 0 1.35em
+}
+.woocommerce #respond input#submit.loading::after, 
+.woocommerce a.button.loading::after, 
+.woocommerce button.button.loading::after, 
+.woocommerce input.button.loading::after{
+	top:auto
+}
+/* archive product title */
+.woocommerce ul.products li.product h3,
+.woocommerce ul.products li.product .woocommerce-loop-product__title{
+    font-size:1.25em;
+	font-family:'Lora', serif;
+	letter-spacing:.01em;
+	margin:0 0 .4em
+}
+/* Price */
+.woocommerce ul.products li.product a,
+.woocommerce ul.products li.product .price{
+    margin:0 0 .8em
+}
+
+/* SINGLE PRODUCTS
+================================================ */
+/* Title */
+.woocommerce div.product .product_title{
+	font-size: 1.35em
+}
+/* Price */
+.woocommerce div.product p.price,
+.woocommerce div.product span.price{
+	font-size:1em;
+	margin:0 0 .7em;
+	transform:none
+}
+.woocommerce div.product p.price ins,
+.woocommerce div.product span.price ins,
+.woocommerce div.product p.price del,
+.woocommerce div.product span.price del{
+	color:#363636;
+	font-weight:300
+}
+/* quantity */
+.woocommerce .quantity .qty{
+	padding:.225em 0 .225em .225em;
+	width:3em
+}
+/* tabs */
+.woocommerce div.product .woocommerce-tabs ul.tabs li a{
+	color:#999;
+	padding:.85em 1.45em;
+	text-transform:none;
+	letter-spacing:.02em
+}
+.woocommerce div.product .woocommerce-tabs ul.tabs li.active{
+	border-color:var(--theme_accent);
+	color:#000
+}
+/* CART
+================================================ */
+.woocommerce #content table.cart td.actions .coupon .input-text,
+#content .woocommerce .woocommerce-cart-form table.cart td.actions .coupon .input-text{
+	padding:.25em .7em;
+	width:9em
+}
+
+/* CHECKOUT
+================================================ */
+.select2-container--default .select2-selection--single,
+.select2-container--default .select2-selection--single .select2-selection__arrow{
+	height:57px;
+	border-radius:3px;
+	border-color:rgba(0,0,0,.2)
+}
+.select2-container--default .select2-selection--single .select2-selection__rendered{
+	line-height:57px
+}
+.select2-results__option{
+	margin:0
+}
+/************************************************************************************
+BUILDER STYLING
+*************************************************************************************/
+/* BUTTON MODULE
+================================================ */
+.ui.builder_button{
+	text-transform:uppercase;
+	font-weight:600;
+	font-size:1.5em;
+	padding:.5em 1.55em.6em;
+	letter-spacing:.06em
+}
+.ui.yellow.builder_button{
+	background-color:#e8b31e;
+	color:#fff;
+}
+.ui.yellow.builder_button:hover{
+	background-color:#000
+}
+.module.module-buttons a.yellow.builder_button{
+	color:#000
+}
+.module.module-buttons a.yellow.builder_button:hover{
+	color:#fff
+}
+
+/* RESPONSIVE */
+@media(max-width:680px){
+	h1{
+		font-size:2.6em
+	}
+	h2{
+		font-size:1.9em
+	}
+}

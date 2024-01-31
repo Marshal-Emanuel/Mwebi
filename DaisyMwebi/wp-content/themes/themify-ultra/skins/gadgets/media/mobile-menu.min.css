@@ -1,0 +1,1 @@
+.header-leftpane #menu-icon,.header-rightpane #menu-icon{background-color:var(--theme_accent)}#menu-icon{padding:11px}.fixed-header #site-logo,.header-block .fixed-header #site-logo{margin-top:10px}#headerwrap #main-nav .current-menu-item>a,#headerwrap #main-nav .current_page_item>a,#headerwrap #main-nav a:hover,#headerwrap #main-nav ul a:hover{color:var(--theme_accent)}

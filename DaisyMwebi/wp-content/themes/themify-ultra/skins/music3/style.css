@@ -1,0 +1,417 @@
+/*
+Skin Name:Ultra Music3
+Version:1.0
+Demo URI:https://themify.org/ultra-music3/
+Required Plugins:builder-audio, builder-contact, builder-maps-pro, themify-event-post
+*/
+
+/************************************************************************************
+GENERAL
+*************************************************************************************/
+:root{
+	--theme_accent:#ff2d55;
+	--theme_accent_semi:rgba(255,45,85,.7);
+	--theme_accent_hover:rgba(255,45,85,.7)
+}
+body{
+	font:17px/1.7em 'Jost', sans-serif;
+	background-color:#190c22;
+	color:#c3bace
+}
+li::marker{
+	color:var(--theme_accent);
+	font-size:1.6em
+}
+/* HEADINGS
+================================================ */
+h1,h2,h3,h4,h5,h6{
+	color:#fff;
+	font-weight:600
+}
+h1,h2{
+	margin:0 0 .2em;
+	letter-spacing:-.02em
+}
+h1{
+	font-size:3.2em;
+	font-weight:bold;
+	letter-spacing:-.02em;
+	text-transform:uppercase
+}
+h3{
+	font-size:2em;
+	font-weight:bold;
+	line-height:1.2em;
+	letter-spacing:-.03em
+}
+/* FANCY HEADING
+================================================ */
+.module-fancy-heading .main-head{
+	font-weight:normal;
+	font-size:.6em;
+	opacity:.7;
+	text-transform:uppercase;
+	letter-spacing:.05em
+}
+.module-fancy-heading .sub-head{
+	padding-top:.1em;
+	font-size:1.25em;
+	letter-spacing:.01em
+}
+/* FORM
+================================================ */
+input:read-write,input:read-only,input[type=radio],input[type=checkbox],select,textarea{
+	border-radius:8px;
+	background:#483a55;
+	color:#fff;
+	border:0
+}
+input:read-write:focus,input:read-only:focus,select:focus,textarea:focus{
+	border-color:var(--theme_accent)
+}
+input[type=radio]{
+	border-radius:50em
+}
+input[type=reset], input[type=submit], button{
+	border-radius:8px;
+	padding:12px 22px;
+	font-weight:normal;
+	width:auto
+}
+input[type=reset]:hover, input[type=submit]:hover, button:hover{
+	background-color:var(--theme_accent_semi)
+}
+
+/************************************************************************************
+HEADER
+*************************************************************************************/
+.transparent-header #headerwrap.fixed-header,
+#headerwrap.fixed-header,
+#headerwrap{
+    background-color:rgba(25,16,97,.8);
+	color:#fff
+}
+/* SITE LOGO
+================================================ */
+#site-logo{
+	text-transform:uppercase;
+	letter-spacing:.05em;
+	font-size:1.4em;
+	font-weight:500
+}
+#site-description{
+	font-size:.9em;
+	margin-top:7px
+}
+/* MAIN NAVIGATION
+================================================ */
+#main-nav a{
+	border:2px solid transparent;
+    border-radius:30px;
+	padding:4px 14px;
+	box-sizing:border-box;
+	transition:background .4s
+}
+#main-nav a:hover{
+    background-color:var(--theme_accent);
+    color:#fff
+}
+#main-nav ul a, #main-nav .mega-menu-posts a, #main-nav .mega-menu-posts span{
+	border-radius:0
+}
+#main-nav ul a:hover{
+    background-color:transparent
+}
+#main-nav > .current_page_item a, #main-nav > .current-menu-item a{
+    background:0;
+    color:#fff;
+    border:2px solid currentColor
+}
+#main-nav > .current_page_item a:hover, #main-nav > .current-menu-item a:hover{
+    background-color:var(--theme_accent);
+    color:#fff;
+    border-color:var(--theme_accent)
+}
+/* HEADER STRIPE
+================================================ */
+.header-stripe #header{
+    background-color:rgba(0,0,0,.35)
+}
+
+/************************************************************************************
+POSTS
+*************************************************************************************/
+.loops-wrapper.list-post .post-date,
+.loops-wrapper .post{
+	text-align:initial
+}
+.post-title a{
+	color:#fff
+}
+.post-image img{
+	border-radius:0
+}
+/* POST NAV
+================================================ */
+.post-nav a{
+	color:#fff
+}
+.post-nav .prev .arrow:after,
+.post-nav .next .arrow:after{
+	display:none
+}
+.post-nav .prev .arrow:before,
+.post-nav .next .arrow:before{
+	content:"";
+	display:inline-block;
+	border:1px solid var(--theme_accent);
+	width:15px;
+	height:auto;
+	top:15px;
+	transform:none
+}
+.sidebar-none.single-post .post-nav,
+.sidebar-none.single-post .commentwrap{
+    padding-left:15%;
+    padding-right:15%
+}
+
+/* pagination */
+.pagenav{
+	text-align:right
+}
+.pagenav a,.pagenav span{
+	font-weight:normal;
+	font-size:1.1em;
+	line-height:1;
+	padding:6px 12px;
+	border-radius:8px
+}
+.pagenav .current{
+    background-color:var(--theme_accent);
+    color:#fff;
+    border:0
+}
+
+/************************************************************************************
+FOOTER
+*************************************************************************************/
+#footerwrap{
+    background-color:#000;
+    color:#c3bace;
+    padding-top:2.3em
+}
+#footerwrap a{
+	color:#fff
+}
+#footerwrap a:hover{
+	color:var(--theme_accent)
+}
+/* BACK TO TOP
+================================================ */
+.floating-back-top{
+	box-shadow:0 3px 10px rgba(255,45,85,.4)
+}
+/* FOOTER WIDGET
+================================================ */
+.footer-widgets .widgettitle{
+	text-transform:uppercase;
+	margin:0 0 .6em;
+	letter-spacing:.1em;
+	font-weight:normal;
+	font-size:.9em
+}
+.footer-widgets [class*="col"]{
+	border-left:1px solid rgba(200,200,200,.2)
+}
+.footer-widgets [class*="col"]:first-child{
+	border-left:none
+}
+#footer .footer-widgets{
+	padding-top:1.3em;
+	padding-bottom:1.1em
+}
+#footer .footer-widgets .widget{
+	margin-top:1.2em;
+	margin-bottom:27px
+}
+
+/************************************************************************************
+BUILDER STYLING
+*************************************************************************************/
+/* BUILDER BUTTON
+================================================ */
+.builder_button{
+    background-color:#fff;
+    letter-spacing:-.04em;
+    font-weight:600;
+    border:0;
+    border-radius:8px
+}
+.module-buttons .builder_button{
+	font-size:1em;
+	font-weight:700;
+	line-height:1.7em;
+	padding:.7em 1.4em;
+	margin:0;
+	color:var(--theme_accent);
+	border-radius:50em;
+	border-width:2px;
+	box-shadow:none;
+	text-decoration:none;
+	text-shadow:none;
+	text-transform:uppercase
+}
+.module.module-buttons .ui.tb_default_color{
+	color:var(--theme_accent)
+}
+.module.module-buttons .ui.tb_default_color:hover{
+	background-color:var(--theme_accent);
+	color:#fff
+}
+.module.module-buttons.rounded a{
+	border-radius:8px
+}
+.module-buttons.small span{
+	font-size:1em
+}
+/* IMAGE MODULE
+================================================ */
+.module .image-wrap .zoom{
+	background-color:#fff;
+	color:var(--theme_accent);
+	padding:1.8em;
+	margin:-50px 0 0 -50px
+}
+.module .image-wrap .zoom .tf_fa{
+	stroke-width:1px;
+	font-size:1.8em
+}
+.module .image-wrap .zoom:hover{
+	background-color:var(--theme_accent)
+}
+.module-image .image-wrap a[href*="vimeo"] span.zoom .tf_fa,
+.module-image .image-wrap a[href*="youtu.be"] span.zoom .tf_fa,
+.module-image .image-wrap a[href*="youtube"] span.zoom .tf_fa,
+.module-image .image-wrap a[href*=".avi"] span.zoom .tf_fa,
+.module-image .image-wrap a[href*=".mov"] span.zoom .tf_fa,
+.module-image .image-wrap a[href*=".flv"] span.zoom .tf_fa,
+.module-image .image-wrap a[href*=".f4v"] span.zoom .tf_fa,
+.module-image .image-wrap a[href*=".mp4"] span.zoom .tf_fa{
+	display:none
+}
+.module-image .image-wrap a[href*="vimeo"] span.zoom:before,
+.module-image .image-wrap a[href*="youtu.be"] span.zoom:before,
+.module-image .image-wrap a[href*="youtube"] span.zoom:before,
+.module-image .image-wrap a[href*=".avi"] span.zoom:before,
+.module-image .image-wrap a[href*=".mov"] span.zoom:before,
+.module-image .image-wrap a[href*=".flv"] span.zoom:before,
+.module-image .image-wrap a[href*=".f4v"] span.zoom:before,
+.module-image .image-wrap a[href*=".mp4"] span.zoom:before{
+    content:'';
+    width:0;
+    height:0;
+    border-style:solid;
+    border-width:15px 0 15px 30px;
+    border-color:transparent;
+    border-left-color:inherit;
+    display:inline-block;
+    vertical-align:middle;
+    margin:-15px 0 0 -13px
+}
+/* OPTIN MODULE
+================================================ */
+.module-optin.tb_optin_horizontal form .tb_optin_submit{
+	width:auto
+}
+.tb_optin_horizontal .tb_optin_form input,
+.tb_optin_horizontal .tb_optin_form .tb_optin_submit button{
+    margin:0
+}
+/* BUILDER AUDIO
+================================================ */
+.album-playlist .tf_audio_progress_current,
+.album-container .album-playlist .tf_audio_progress_current{
+	background-color:var(--theme_accent)
+}
+.module-audio .tf_audio_progress_wrap,
+.tf_audio_progress_wrap,
+.album-playlist .tf_audio_progress_loaded,
+.album-container .album-playlist .tf_audio_progress_loaded{
+	background-color:#e7e7e7
+}
+.album-playlist .tracklist .track:hover button,
+.tracklist .track:hover .play-track,
+.tracklist .track:hover .pause-track,
+.tracklist .track:hover .track-title,
+.album-container .album-playlist .tracklist .track:hover button,
+.album-container .tracklist .track:hover .play-track,
+.album-container .tracklist .track:hover .pause-track,
+.album-container .tracklist .track:hover .track-title{
+	color:var(--theme_accent)
+}
+.tf_audio_current_time{
+	display:none
+}
+/*
+EVENT POST LAYOUT
+================================================ */
+.tep_ticket a{
+	border:0;
+	border-radius:30px;
+	background-color:var(--theme_accent);
+	color:#fff;
+	text-transform:uppercase;
+	font-size:.9em;
+	font-weight:500;
+	padding:.9em 2.6em
+}
+.tep_ticket a:hover{
+	background-color:var(--theme_accent_semi);
+	color:#fff
+}
+.list-post .tep_location,.list-post .tep_address,
+.list-post .tep_meta,.list-post .tep_content,
+.list-post .tep_ticket:before{
+	display:none
+}
+.list-post .tep_image,
+.list-post .tep_post_content{
+	display:inline-block;
+	vertical-align:top
+}
+
+.themify_event_post_loop.list-post .tep_post_title{
+	font-size:1.5em
+}
+.themify_event_post_loop.list-post .tep_image{
+	max-width:100px;
+	margin:0 1.4em 1em 0
+}
+.themify_event_post_loop.list-post .tep_ticket{
+    position:absolute;
+    top:0;
+    right:0;
+    margin-top:20px
+}
+
+/************************************************************************************
+MEDIA QUERIES
+*************************************************************************************/
+@media(max-width:680px){
+	h1,.page-title{
+		font-size:1.8em
+	}
+	.sidebar-none.single-post .post-nav,
+	.sidebar-none.single-post .commentwrap{
+		padding-left:0;
+		padding-right:0
+	}
+	.footer-widgets [class*="col"],.footer-widgets [class*="col"]:first-child{
+		border:0
+	}
+	.themify_event_post_loop.list-post .tep_ticket{
+		position:static;
+		padding:0
+	}
+}
